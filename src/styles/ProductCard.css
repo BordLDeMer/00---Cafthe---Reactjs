@@ -12,7 +12,7 @@
 
     border: 1px solid #ddd;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: blueviolet;
     text-align: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     /* On met 0 de margin puisque le "gap" de flex gère l'espacement */

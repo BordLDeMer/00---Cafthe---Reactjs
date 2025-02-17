@@ -10,7 +10,7 @@ import "../styles/ProductList.css";
 function ProductList(props) {
   const [produits, setProduits] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-use
+
   useEffect(() => {
     const fetchProduits = async () => {
       try {
