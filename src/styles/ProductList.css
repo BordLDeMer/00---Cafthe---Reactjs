@@ -10,7 +10,8 @@
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #f9f9f9; /* Optionnel : léger fond gris */
+    background-color: lightyellow; /* Optionnel : léger fond jaune */
+    border-radius: 10px;
 }
 
 /*

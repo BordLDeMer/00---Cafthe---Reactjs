@@ -52,8 +52,7 @@ function ProductList(props) {
 
   return (
     <div>
-      <h3>Liste des produits</h3>
-      <div className="product-list">
+        <div className="product-list">
         {produits.map((produit) => (
           <ProductCard key={produit.id} produit={produit} />
         ))}

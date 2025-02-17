@@ -1,5 +1,6 @@
 import React from "react";
 import ProductList from "./ProductList";
+import "../styles/index.css";
 
 
 function Home(props) {

@@ -7,7 +7,7 @@ function ProductCard({produit}) {
         <div className="product-card">
             {/* image */}
             <h3>{produit.designation_produit}</h3>
-            <p>{produit.prix_ttc}</p>
+            <p>{produit.prix_ttc}€</p>
             <Link to={`/produit/${produit.id}`} className="details-btn">
                 Voir détails
             </Link>
