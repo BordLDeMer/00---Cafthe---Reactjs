@@ -5,9 +5,12 @@
        elles apparaîtront sur une rangée. Si l'espace se réduit (ex. tablette),
        le flex-wrap fera passer des cartes à la ligne suivante.
 */
+h1 {
+    text-align: center
+}
 body {
     background-color: bisque;
-    background-image: url("C:\Users\benjamin.bidou\Desktop\Projet Cafthé\reactjs\public\moc-chau-tea-hills-2094184_1280.jpg");
+    background-image: url("/public/moc-chau-tea-hills-2094184_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
