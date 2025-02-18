@@ -11,7 +11,7 @@ function Navbar(props) {
 
   return (
     <nav>
-      <Link to="/">Mon Site</Link>
+     <button> <Link to="/">Accueil</Link></button>
 
       <div>
         {isAuthenticated ? (
@@ -22,7 +22,7 @@ function Navbar(props) {
             <button onClick={handleLogout}>Se déconnecter</button>
           </>
         ) : (
-          <Link to="/login">Se connecter </Link>
+          <button>< Link to="/login">Se connecter < /Link></button>
         )}
       </div>
     </nav>

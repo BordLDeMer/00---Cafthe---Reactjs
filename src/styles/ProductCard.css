@@ -12,8 +12,22 @@ body {
     background-size: cover;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Centrer les éléments verticalement */
+    padding: 10px 20px; /* Espacement autour de la navbar */
+    background-color: lightyellow; /* Couleur de fond de la navbar */
+    border-radius: 10px;
+}
+
 p {
     font-style: italic;
+}
+
+button {
+    background-color: chocolate;
+    border-radius: 7px;
 }
 
 .product-card,
