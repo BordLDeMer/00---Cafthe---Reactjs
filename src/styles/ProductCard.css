@@ -26,8 +26,11 @@ p {
 }
 
 button {
-    background-color: chocolate;
+    background: rgb(255,255,255);
+    background: linear-gradient(47deg, rgba(178,34,34,1) 0%, rgb(210, 105, 30) 100%);;
     border-radius: 7px;
+    width: 150px;
+    height: 40px;
 }
 
 .product-card,

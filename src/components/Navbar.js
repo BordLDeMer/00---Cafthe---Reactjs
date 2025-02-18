@@ -10,22 +10,31 @@ function Navbar(props) {
   };
 
   return (
-    <nav>
-     <button> <Link to="/">Accueil</Link></button>
+      <nav>
+          <button><Link to="/">Accueil</Link></button>
+          <button><Link to="/panier">Panier</Link></button>
+          <button><Link to="/nos-thes-infusions">Nos Thés & Infusions</Link></button>
+          <button><Link to="/nos-cafes">Nos Cafés</Link></button>
+          <button><Link to="/nos-machines">Nos Machines</Link></button>
+          <button><Link to="/nos-cadeaux-coffrets">Nos Cadeaux & Coffrets Découverte</Link></button>
+          <button><Link to="/faq">FAQ</Link></button>
+          <button><Link to="/en-savoir-plus">En Savoir Plus</Link></button>
+          <button><Link to="/votre-espace">Votre Espace</Link></button>
+          <button><Link to="/mentions-legales">Mentions Légales</Link></button>
 
-      <div>
-        {isAuthenticated ? (
-          <>
+          <div>
+              {isAuthenticated ? (
+                  <>
             <span>
               Bonjour {user.prenom} {user.nom}
             </span>
-            <button onClick={handleLogout}>Se déconnecter</button>
-          </>
-        ) : (
-          <button>< Link to="/login">Se connecter < /Link></button>
-        )}
-      </div>
-    </nav>
+                      <button onClick={handleLogout}>Se déconnecter</button>
+                  </>
+              ) : (
+                  <button>< Link to="/login">Se connecter < /Link></button>
+              )}
+          </div>
+      </nav>
   );
 }
 
