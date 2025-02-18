@@ -7,6 +7,9 @@
 */
 body {
     background-color: bisque;
+    background-image: url("C:\Users\benjamin.bidou\Desktop\Projet Cafthé\reactjs\public\moc-chau-tea-hills-2094184_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 p {
@@ -38,6 +41,7 @@ p {
 .product-card h3 {
     font-size: 18px;
     margin: 10px 0;
+    color: lightcoral;
 }
 
 .product-card p {
