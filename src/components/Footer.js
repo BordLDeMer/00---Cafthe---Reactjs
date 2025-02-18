@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function Footer(props) {
   return (
       <div>
-          <h1>Footer</h1>
+          <h1>Nos promotions du moment</h1>
 
           <button><Link to="/mentions-legales">Mentions Légales</Link></button>
       </div>
