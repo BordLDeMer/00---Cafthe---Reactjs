@@ -41,9 +41,10 @@ button {
     flex: 1 1 220px;
     max-width: 220px;
 
-    border: 2px solid #ddd;
+    border: 2px solid darkolivegreen;
+
     border-radius: 10px;
-    background-color: darkolivegreen;
+    background-color: #89937C;
     text-align: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     /* On met 0 de margin puisque le "gap" de flex gère l'espacement */
