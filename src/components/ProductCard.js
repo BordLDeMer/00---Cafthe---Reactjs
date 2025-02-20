@@ -12,7 +12,14 @@ function ProductCard({produit}) {
                 </Link>
                 <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s</h3>
-                <p>{produit.prix_ttc}€</p>
+                <p>{produit.prix_ttc}€
+                    <button to={`/pages/Panier.js`} className="details-btn2">
+                        <h3>+</h3>
+                    </button>
+                </p>
+                <button to={`/pages/Panier.js`} className="details-btn2">
+                    <h3>+</h3>
+                </button>
             </div>
         </div>
     );
