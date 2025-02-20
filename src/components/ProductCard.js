@@ -5,12 +5,15 @@ import "../styles/ProductCard.css";
 function ProductCard({produit}) {
     return (
         <div className="product-card">
-            <img src="/ai-generated-7789179_1280.jpg"></img>
-            <h3>{produit.designation_produit}</h3>
-            <p>{produit.prix_ttc}€</p>
-            <Link to={`/produit/${produit.id}`} className="details-btn">
-                Voir détails
-            </Link>
+            <div><img src="/ai-generated-7789179_1280.jpg"></img></div>
+            <div className="details-product-card">
+                <Link to={`/produit/${produit.id}`} className="details-btn">
+                     <h3>{produit.designation_produit}</h3>
+                </Link>
+                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s</h3>
+                <p>{produit.prix_ttc}€</p>
+            </div>
         </div>
     );
 }

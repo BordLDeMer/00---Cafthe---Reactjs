@@ -44,11 +44,12 @@ button {
 .product-card,
 .product-skeleton {
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
+    /*height: 300px;*/
     gap: 20px;
-
+    aspect-ratio : 3/1;
     border: 2px solid darkolivegreen;
 
     border-radius: 10px;
@@ -59,11 +60,15 @@ button {
     margin: 0;
     padding: 15px;
 }
+.details-product-card{
+    display : flex;
+    flex-direction: column;
+}
 
 /* Image du produit (ou skeleton d'image) */
 .product-card img,
 .product-skeleton img {
-    width: 50%;
+    width: 200px;
     border-radius: 10px;
 }
 
@@ -88,6 +93,9 @@ button {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.2s ease;
+    aspect-ratio : 4/1;
+
+    max-height: 50px;
 }
 
 .details-btn:hover {
