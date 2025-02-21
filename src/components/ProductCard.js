@@ -16,7 +16,7 @@ function ProductCard({produit}) {
 
                 <div className="prix-btn2">
                     <p>{produit.prix_ttc}€</p>
-                    <Link to={`/`} className="details-btn2"><h3>+</h3></Link>
+                    <Link to={`/`} className="details-btn2"><h2>ADD</h2></Link>
                 </div>
             </div>
         </div>

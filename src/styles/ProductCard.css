@@ -105,7 +105,8 @@ aspect-ratio : 30/9;
 }
 
 .details-btn2{
-    width: 50px;
+    margin-top: 10Px;
+    width: 100px;
     height: 50px;
     background: rgb(255,255,255);
     /*background: linear-gradient(47deg, rgba(240,224,203,1) 0%, rgb(204,153,102) 80%);*/
