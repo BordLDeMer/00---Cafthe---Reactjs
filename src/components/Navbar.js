@@ -11,7 +11,12 @@ function Navbar(props) {
 
   return (
       <nav>
-          <button><Link to="/">Accueil</Link></button>
+          <div className="navbar-logo">
+              <Link to="/">
+                  <img src="/lolgo.png" alt="Logo" className="logo"/>
+                  Accueil
+              </Link>
+          </div>
           <button><Link to="/nos-thes-infusions">Nos Thés & Infusions</Link></button>
           <button><Link to="/nos-cafes">Nos Cafés</Link></button>
           <button><Link to="/nos-machines">Nos Machines</Link></button>

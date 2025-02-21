@@ -5,6 +5,13 @@
        elles apparaîtront sur une rangée. Si l'espace se réduit (ex. tablette),
        le flex-wrap fera passer des cartes à la ligne suivante.
 */
+.logo{
+    width: 70px;
+}
+.navbar-logo{
+    display: flex;
+    flex-direction: column;
+}
 h1 {
     text-align: center
 }
