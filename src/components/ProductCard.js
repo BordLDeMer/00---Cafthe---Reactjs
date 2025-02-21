@@ -8,18 +8,16 @@ function ProductCard({produit}) {
             <div><img src="/ai-generated-7789179_1280.jpg"></img></div>
             <div className="details-product-card">
                 <Link to={`/produit/${produit.id}`} className="details-btn">
-                     <h3>{produit.designation_produit}</h3>
+                    <h3>{produit.designation_produit}</h3>
                 </Link>
+
                 <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s</h3>
-                <p>{produit.prix_ttc}€
-                    <button to={`/pages/Panier.js`} className="details-btn2">
-                        <h3>+</h3>
-                    </button>
-                </p>
-                <button to={`/pages/Panier.js`} className="details-btn2">
-                    <h3>+</h3>
-                </button>
+                    industry's standard dummy text ever since the 1500s</h3>
+
+                <div className="prix-btn2">
+                    <p>{produit.prix_ttc}€</p>
+                    <Link to={`/`} className="details-btn2"><h3>+</h3></Link>
+                </div>
             </div>
         </div>
     );
