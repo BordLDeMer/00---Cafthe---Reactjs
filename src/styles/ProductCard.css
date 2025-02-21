@@ -6,7 +6,7 @@
        le flex-wrap fera passer des cartes à la ligne suivante.
 */
 .logo{
-    width: 70px;
+    width: 100px;
 }
 .navbar-logo{
     display: flex;
