@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import ProductDetails from "./pages/ProductDetails";
 import { AuthProvider } from "./context/AuthContext";
 import Login from "./pages/Login";
+import Panier from "./context/Panier";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="produit/:id" element={<ProductDetails />} />
             <Route path={"login"} element={<Login />} />
+            <Route path={"panier"} element={<Panier />}/>
           </Route>
         </Routes>
       </Router>
