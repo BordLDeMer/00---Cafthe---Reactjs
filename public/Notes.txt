@@ -1,0 +1,13 @@
+FAITS :
+
+Login
+panier
+afficher commandes
+footer
+trier produits
+ - promos
+ - thés
+ - café
+ - coffrets
+
+FONXTIONNELS :
