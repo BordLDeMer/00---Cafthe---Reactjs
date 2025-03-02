@@ -5,6 +5,9 @@ import ProductDetails from "./pages/ProductDetails";
 import { AuthProvider } from "./context/AuthContext";
 import Login from "./pages/Login";
 import Panier from "./context/Panier";
+import EspacePerso from "./pages/EspacePerso";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -16,6 +19,8 @@ function App() {
             <Route path="produit/:id" element={<ProductDetails />} />
             <Route path={"login"} element={<Login />} />
             <Route path={"panier"} element={<Panier />}/>
+            <Route path={"EspacePerso"} element={<EspacePerso />}/>
+            <route path={"Footer"} element={<Footer />}/>
           </Route>
         </Routes>
       </Router>
