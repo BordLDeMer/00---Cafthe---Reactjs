@@ -7,6 +7,8 @@ import Login from "./pages/Login";
 import Panier from "./context/Panier";
 import EspacePerso from "./pages/EspacePerso";
 import Footer from "./components/Footer";
+import TheInfusions from "./pages/TheInfusions";
+import CadeauxCoffrets from "./pages/CadeauxCoffrets";
 
 
 function App() {
@@ -21,6 +23,9 @@ function App() {
             <Route path={"panier"} element={<Panier />}/>
             <Route path={"EspacePerso"} element={<EspacePerso />}/>
             <route path={"Footer"} element={<Footer />}/>
+            <route path={"Cafés"} element={<Cafes />}/>
+            <route path={"TheInfusions"} element={<TheInfusions />}/>
+            >route path={"CadeauxCoffrets"} element={<CadeauxCoffrets />}/>
           </Route>
         </Routes>
       </Router>
