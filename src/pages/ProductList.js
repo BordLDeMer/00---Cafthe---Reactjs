@@ -14,7 +14,8 @@ function ProductList(props) {
   useEffect(() => {
     const fetchProduits = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/produitsstart");
+        const response = await axios.get("http://localhost:3000/api/produit");
+        console.log(response.data)
         setProduits(response.data);
       } catch (error) {
         console.error("Erreur de chargement des produits ", error);

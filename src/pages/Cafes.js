@@ -1,17 +1,35 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
+import axios from "axios";
+import login from "./Login";
 
 const App = () => {
-    const [motCle, setMotCle] = useState('');
+    const [motCle, setMotCle] = useState('Café');
+    const [produits, setProduits] = useState('');
+    useEffect(() => {
+        const fetchProduits = async () => {
+            try {
+                const response = await axios.get("http://localhost:3000/api/produit");
+                setProduits(response.data);
+            } catch (error) {
+                console.error("Erreur de chargement des produits ", error);
+            }
+        };
 
+        void fetchProduits();
+    }, []);
+
+    console.log(produits[0])
     // Filtrer les produits en fonction du mot-clé dans la description
     const produitsFiltres = produits.filter((produit) =>
-        produit.description.toLowerCase().includes(motCle.toLowerCase())
+        produit.designation_produit.toLowerCase().includes(motCle.toLowerCase())
     );
 
     // Fonction pour gérer la modification du mot-clé
     const handleMotCleChange = (event) => {
         setMotCle(event.target.value);
     };
+
+    console.log(produitsFiltres);
 
     return (
         <div>

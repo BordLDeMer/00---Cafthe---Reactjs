@@ -9,6 +9,7 @@ import EspacePerso from "./pages/EspacePerso";
 import Footer from "./components/Footer";
 import TheInfusions from "./pages/TheInfusions";
 import CadeauxCoffrets from "./pages/CadeauxCoffrets";
+import Cafes from "./pages/Cafes";
 
 
 function App() {
@@ -22,10 +23,10 @@ function App() {
             <Route path={"login"} element={<Login />} />
             <Route path={"panier"} element={<Panier />}/>
             <Route path={"EspacePerso"} element={<EspacePerso />}/>
-            <route path={"Footer"} element={<Footer />}/>
-            <route path={"Cafés"} element={<Cafes />}/>
-            <route path={"TheInfusions"} element={<TheInfusions />}/>
-            >route path={"CadeauxCoffrets"} element={<CadeauxCoffrets />}/>
+            <Route path={"Footer"} element={<Footer />}/>
+            <Route path={"Cafés"} element={<Cafes />}/>
+            <Route path={"TheInfusions"} element={<TheInfusions />}/>
+            <Route path={"CadeauxCoffrets"} element={<CadeauxCoffrets />}/>
           </Route>
         </Routes>
       </Router>

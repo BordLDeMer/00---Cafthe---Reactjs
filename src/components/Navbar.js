@@ -18,7 +18,7 @@ function Navbar(props) {
               </Link>
           </div>
           <button><Link to="/nos-thes-infusions">Nos Thés & Infusions</Link></button>
-          <button><Link to="/nos-cafes">Nos Cafés</Link></button>
+          <button><Link to="/Cafés">Nos Cafés</Link></button>
           <button><Link to="/nos-machines">Nos Machines</Link></button>
           <button><Link to="/nos-cadeaux-coffrets">Nos Cadeaux & Coffrets Découverte</Link></button>
           <button><Link to="/panier">Panier</Link></button>
