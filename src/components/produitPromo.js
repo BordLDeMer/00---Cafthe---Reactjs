@@ -1,7 +1,6 @@
-// Produits en promotion
 import {useState} from "react";
 
-const produitPromo = () => {
+/*const produitPromo = () => {
     const [prixMax, setPrixMax] = useState(10);
 
     // Filtrer les produits en dessous du prixMax (10€)
@@ -20,4 +19,4 @@ const produitPromo = () => {
         </div>
     );
 };
-export default produitPromo;
+export default produitPromo;*/

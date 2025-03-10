@@ -1,5 +1,5 @@
-Cahier des charges :
- -
+Cahier des charges : +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 ** 4.1. Catalogue des Produits -----------------------------------------------------------------------------------------
 - Affichage des produits
 - Détails des produits
@@ -8,20 +8,23 @@ Cahier des charges :
 - Gestion du panier
 - Saisie des quantités et poids
 
-4.3. Processus de Commande et Paiement----------------------------------------------------------------------------------
+** 4.3. Processus de Commande et Paiement-------------------------------------------------------------------------------
 - Validation de commande
 - Livraison
 - Paiement
 
-4.4. Inscription et Connexion des Clients-------------------------------------------------------------------------------
+** 4.4. Inscription et Connexion des Clients----------------------------------------------------------------------------
 - Inscription en ligne ou en magasin
 - Première connexion
 - Accès sécurisé
 
-4.5. Gestion du profil Client-------------------------------------------------------------------------------------------
+** 4.5. Gestion du profil Client----------------------------------------------------------------------------------------
 - Modification des informations
 - Historique des achats
-FAITS :
+
+
+========================================================================================================================
+FAITS :+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Login
 panier
@@ -33,6 +36,6 @@ trier produits
  - café
  - coffrets
 
-FONXTIONNELS :
+FONCTIONNELS :++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 

@@ -49,7 +49,6 @@ function ProductList(props) {
     );
 
   }
-  console.log('n')
 
   return (
     <div>

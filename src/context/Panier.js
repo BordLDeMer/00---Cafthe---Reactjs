@@ -2,7 +2,7 @@ import React, { useState } from "react";
 //import ProduitCard from "./ProduitCard";
 //import productDetail from "./data";
 
-function App() {
+function Panier() {
     const [panier, setPanier] = useState([]);
 
     const ajouterAuPanier = (produit) => {
@@ -45,4 +45,4 @@ function App() {
     );
 }
 
-export default App;
+export default Panier;

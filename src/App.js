@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import TheInfusions from "./pages/TheInfusions";
 import CadeauxCoffrets from "./pages/CadeauxCoffrets";
 import Cafes from "./pages/Cafes";
+import Appareils from "./pages/Appareils";
 
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
             <Route path={"EspacePerso"} element={<EspacePerso />}/>
             <Route path={"Footer"} element={<Footer />}/>
             <Route path={"Cafés"} element={<Cafes />}/>
-            <Route path={"TheInfusions"} element={<TheInfusions />}/>
+            <Route path={"nos-thes-infusions"} element={<TheInfusions />}/>
+            <Route path={"nos-machines"} element={<Appareils />}/>
             <Route path={"CadeauxCoffrets"} element={<CadeauxCoffrets />}/>
           </Route>
         </Routes>

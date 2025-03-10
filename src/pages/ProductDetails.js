@@ -5,14 +5,12 @@ import "../styles/ProductDetails.css";
 
 function ProductDetails() {
   const { id } = useParams();
-  const [produit, setProduit] = useState();
+  const [produit, setProduit] = useState( []);
 
   useEffect(() => {
     const fetchProduit = async () => {
       try {
-        const response = await axios.get(
-          `http://localhost:3000/api/produits/${id}`,
-        );
+        const response = await axios.get(`http://localhost:3000/api/produit/${id}`);
         setProduit(response.data);
       } catch (error) {
         console.error("Erreur au chargement du produit ", error);
@@ -22,21 +20,27 @@ function ProductDetails() {
     void fetchProduit();
   }, [id]);
 
-  if (!produit) {
-    return <p>Produit introuvable ou erreur.</p>;
-  }
+    if(!produit) {
+        return (
+            <p>Erreur...</p>
+        )
+    }
+
+    console.log(produit)
 
   return (
     <div className="product-details">
       {/* image */}
-      <h2>{produit.nom}</h2>
-      <p>{produit.description}</p>
-      <p>
-        <strong>Prix TTC :</strong> {produit.prix_ttc} euros
-      </p>
-      <p>
-        <strong>Stock :</strong> {produit.stock} unités
-      </p>
+      <div key={produit.ID_produit}>
+          <h2>{produit.type_produit}</h2>
+          <p>{produit.designation_produit}</p>
+          <p>
+              <strong>Prix TTC :</strong> {produit.prix_ttc} euros
+          </p>
+          {/*<p>
+            <strong>Stock :</strong> {produit.stock} unités
+           </p>*/}
+      </div>
     </div>
   );
 }

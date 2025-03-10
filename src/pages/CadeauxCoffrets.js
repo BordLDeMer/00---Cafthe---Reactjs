@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 
-const App = () => {
+const CadeauxCoffrets = () => {
     const [motCle, setMotCle] = useState('');
+    const [produits, setProduits] = useState([])
+
+
 
     // Filtrer les produits en fonction du mot-clé dans la description
     const produitsFiltres = produits.filter((produit) =>
@@ -39,4 +42,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default CadeauxCoffrets;

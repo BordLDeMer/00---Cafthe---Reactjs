@@ -7,7 +7,7 @@ function ProductCard({produit}) {
         <div className="product-card">
             <div><img src="/ai-generated-7789179_1280.jpg"></img></div>
             <div className="details-product-card">
-                <Link to={`/produit/${produit.id}`} className="details-btn">
+                <Link to={`/produit/${produit.ID_produit}`} className="details-btn">
                     <h3>{produit.designation_produit}</h3>
                 </Link>
 

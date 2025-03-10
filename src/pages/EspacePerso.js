@@ -5,7 +5,7 @@ import React, { createContext, useContext, useState } from 'react';
 
 const sendRequest = async () => {
     try {
-        const response = await axios.get('https://api.example.com/commandes');
+        const response = await axios.get('http://localhost:3000/api/commandes');
         console.log('Réponse de la commande :', response);
     } catch (error) {
         console.error('Erreur lors de la commande :', error);
