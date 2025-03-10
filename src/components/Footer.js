@@ -6,7 +6,7 @@ function Footer() {
         <h1>Nos promotions du moment</h1>
 
         <button><Link to="/mentions-legales">Mentions Légales</Link></button>
-    </div>
+      </div>
   );
 }
 export default Footer;
