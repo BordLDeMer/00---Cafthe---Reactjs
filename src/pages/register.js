@@ -3,12 +3,8 @@ import React from 'react';
 function Register(props) {
     return (
         <div>
-            <html>
-            <head>
                 <meta charSet="utf-8"/>
                 <title>Register</title>
-            </head>
-            <body>
             <form action="test.php" target="_blank">
                 <p>
                     <label>Nom Prénom: <input type="text" name="nom_prénom"/></label>
@@ -26,8 +22,6 @@ function Register(props) {
                     <button>S'inscrire</button>
                 </p>
             </form>
-            </body>
-            </html>
         </div>
     );
 }
