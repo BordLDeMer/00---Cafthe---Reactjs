@@ -11,7 +11,7 @@ import TheInfusions from "./pages/TheInfusions";
 import CadeauxCoffrets from "./pages/CadeauxCoffrets";
 import Cafes from "./pages/Cafes";
 import Appareils from "./pages/Appareils";
-
+import Register from "./pages/register";
 
 function App() {
   return (
@@ -29,6 +29,8 @@ function App() {
             <Route path={"nos-thes-infusions"} element={<TheInfusions />}/>
             <Route path={"nos-machines"} element={<Appareils />}/>
             <Route path={"CadeauxCoffrets"} element={<CadeauxCoffrets />}/>
+            <Route path={"inscription"} element={<Register />}/>
+
           </Route>
         </Routes>
       </Router>
