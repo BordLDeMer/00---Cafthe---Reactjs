@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import axios from "axios";
 import { AuthContext } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 function Login(props) {
   const { login } = useContext(AuthContext); // fonction login venant du contexte
@@ -17,7 +17,7 @@ function Login(props) {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/clients/login",
+        "${react_app_api_url}=https://api.benjamin.bidou.dev-campus.fr/api/clients/login",
         {
           email,
           mot_de_passe,
@@ -68,6 +68,7 @@ function Login(props) {
           />
         </div>
         {errorMsg && (
+          /*<button type="submit"><Link to="/inscription">S'inscrire</Link></button>*/
           <div style={{ color: "red", marginBottom: 10 }}>{errorMsg}</div>
         )}
         <button type="submit">Se connecter</button>

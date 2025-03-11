@@ -7,7 +7,7 @@ const TheInfusions = () => {
     useEffect(() => {
         const fetchProduits = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/produit/rayon/2`);
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}=https://api.benjamin.bidou.dev-campus.fr/api/produit/rayon/2`);
                 setProduits(response.data);
             } catch (error) {
                 console.error("Erreur de chargement des produits ", error);

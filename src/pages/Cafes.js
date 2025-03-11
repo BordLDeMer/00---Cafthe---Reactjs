@@ -9,7 +9,7 @@ const Cafes = () => {
    useEffect(() => {
        const fetchProduits = async () => {
            try {
-               const response = await axios.get(`http://localhost:3000/api/produit/rayon/1`);
+               const response = await axios.get(`${process.env.REACT_APP_API_URL}=https://api.benjamin.bidou.dev-campus.fr/api/produit/rayon/1`);
                setProduits(response.data);
            } catch (error) {
                console.error("Erreur de chargement des produits ", error);
