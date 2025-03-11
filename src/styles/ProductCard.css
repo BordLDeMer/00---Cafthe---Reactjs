@@ -16,8 +16,8 @@ h1 {
     text-align: center
 }
 body {
-    background-color: bisque;
-    background-image: url("/public/moc-chau-tea-hills-2094184_1280.jpg");
+    background-color: rgba(117, 170, 144, 1);
+    /*background-image: url("/public/moc-chau-tea-hills-2094184_1280.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;

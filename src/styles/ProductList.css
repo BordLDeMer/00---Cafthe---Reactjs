@@ -11,7 +11,7 @@
     max-width: 2200px;
     max-height: 4000Px;
     margin: 0 auto;
-    background-color: rgba(255, 250, 205, 0.2); /* Optionnel : léger fond jaune */
+    background-color: rgba(117, 170, 144, 0.5);
     border-radius: 10px;
 }
 
@@ -26,7 +26,7 @@
     text-align: center;
     width: 220px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.1);
     /* Idem, pas de margin pour laisser le grid-gap gérer l'espacement */
     margin: 0;
 }

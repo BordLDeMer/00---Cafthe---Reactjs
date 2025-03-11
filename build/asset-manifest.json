@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4aa3ec9d.css",
+    "main.js": "/static/js/main.291852c9.js",
+    "static/media/moc-chau-tea-hills-2094184_1280.jpg": "/static/media/moc-chau-tea-hills-2094184_1280.c50310735ade70e6b791.jpg",
+    "index.html": "/index.html",
+    "main.4aa3ec9d.css.map": "/static/css/main.4aa3ec9d.css.map",
+    "main.291852c9.js.map": "/static/js/main.291852c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4aa3ec9d.css",
+    "static/js/main.291852c9.js"
+  ]
+}
