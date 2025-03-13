@@ -1,10 +1,12 @@
 .header {
     background-color: #75AA90;
     display: flex;
+    padding-left: 10px;
 
 }
 
 .imgtitre {
     border-radius: 20px;
     object-position:right;
+    padding-left: 10px;
 }

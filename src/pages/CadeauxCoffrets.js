@@ -1,4 +1,4 @@
-/*import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const RandomProducts = () => {
     const [products, setProducts] = useState([]);
@@ -11,7 +11,7 @@ const RandomProducts = () => {
                 const response = await fetch(`${process.env.REACT_APP_API_URL}/api/random-product-by-rayon`);
                 const data = await response.json();
                 setProducts(data);
-                console.log(datay)
+                console.log(data)
             } catch (error) {
                 console.error('Error fetching random products:', error);
             } finally {
@@ -41,6 +41,3 @@ const RandomProducts = () => {
 };
 
 export default RandomProducts;
-
-
- */
