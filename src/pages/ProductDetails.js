@@ -10,7 +10,7 @@ function ProductDetails() {
   useEffect(() => {
     const fetchProduit = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}=https://api.benjamin.bidou.dev-campus.fr/api/produit/${id}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/produit/${id}`);
         setProduit(response.data);
       } catch (error) {
         console.error("Erreur au chargement du produit ", error);

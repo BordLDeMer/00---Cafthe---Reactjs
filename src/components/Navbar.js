@@ -14,7 +14,6 @@ function Navbar() {
           <div className="navbar-logo">
               <Link to="/">
                   <img src="/lolgo.png" alt="Logo" className="logo"/>
-                  Accueil
               </Link>
           </div>
           <Link to="/nos-thes-infusions">Nos Thés & Infusions</Link>

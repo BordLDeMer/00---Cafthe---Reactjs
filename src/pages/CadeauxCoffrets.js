@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import ProductCard from "../components/ProductCard";
+import CoffretCard from "../components/CoffretCard";
 
 const RandomProducts = () => {
     const [products, setProducts] = useState([]);
@@ -22,19 +24,17 @@ const RandomProducts = () => {
         void fetchRandomProducts();
     }, []);
 
+    console.log(products)
+
     return (
         <div>
-            <h1>Produits aléatoires par rayon</h1>
+            <h1>Coffrets découverte</h1>
             {loading ? (
                 <p>Chargement...</p>
             ) : (
-                <ul>
-                    {products.map((product) => (
-                        <li key={product.ID_produit}>
-                            Rayon {product.ID_rayon}: Produit ID {product.ID_produit}
-                        </li>
-                    ))}
-                </ul>
+                products.map((product) => (
+                    <CoffretCard ID_produit={product.ID_produit} />
+                    ))
             )}
         </div>
     );
