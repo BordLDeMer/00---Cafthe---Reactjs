@@ -16,7 +16,7 @@ h1 {
     text-align: center
 }
 body {
-    background-color: rgba(117, 170, 144, 1);
+    /*background-color: rgba(117, 170, 144, 1);
     /*background-image: url("/public/moc-chau-tea-hills-2094184_1280.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,10 +90,10 @@ p {
 
 /* Bouton "Détails" */
 button {
-    background: rgb(255,255,255);
     background: linear-gradient(47deg, rgba(240,224,203,1) 0%, rgb(204,153,102) 80%);;
     border-radius: 20px;
 min-width: 170Px;
+    max-height: 80px;
 width: 6%;
 aspect-ratio : 30/9;
 }

@@ -28,8 +28,8 @@ function App() {
             <Route path={"Cafés"} element={<Cafes />}/>
             <Route path={"nos-thes-infusions"} element={<TheInfusions />}/>
             <Route path={"nos-machines"} element={<Appareils />}/>
-            <Route path={"CadeauxCoffrets"} element={<CadeauxCoffrets />}/>
-            <Route path={"inscription"} element={<Register />}/>
+            <Route path={"nos-cadeaux-coffrets"} element={<CadeauxCoffrets />}/>
+            <Route path={"register"} element={<Register />}/>
 
           </Route>
         </Routes>

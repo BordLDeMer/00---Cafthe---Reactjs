@@ -1,0 +1,10 @@
+.header {
+    background-color: #75AA90;
+    display: flex;
+
+}
+
+.imgtitre {
+    border-radius: 20px;
+    object-position:right;
+}

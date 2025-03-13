@@ -17,11 +17,11 @@ function Navbar() {
                   Accueil
               </Link>
           </div>
-          <button><Link to="/nos-thes-infusions">Nos Thés & Infusions</Link></button>
-          <button><Link to="/Cafés">Nos Cafés</Link></button>
-          <button><Link to="/nos-machines">Nos Machines</Link></button>
-          <button><Link to="/nos-cadeaux-coffrets">Nos Cadeaux & Coffrets Découverte</Link></button>
-          <button><Link to="/panier">Panier</Link></button>
+          <Link to="/nos-thes-infusions">Nos Thés & Infusions</Link>
+          <Link to="/Cafés">Nos Cafés</Link>
+          <Link to="/nos-machines">Nos Machines</Link>
+          <Link to="/nos-cadeaux-coffrets">Nos Cadeaux & Coffrets Découverte</Link>
+          <Link to="/panier">Panier</Link>
           <div>
               {isAuthenticated ? (
                   <>
@@ -31,11 +31,13 @@ function Navbar() {
                     <button onClick={handleLogout}>Se déconnecter</button>
                   </>
               ) : (
-                  <button>< Link to="/login">Se connecter < /Link></button>
+                  <>
+                      <button><Link to="/login">Se connecter </Link></button>
+                  </>
               )}
           </div>
       </nav>
-  );
+  )
 }
 
 export default Navbar;

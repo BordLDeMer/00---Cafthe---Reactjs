@@ -17,12 +17,13 @@ function Login(props) {
 
     try {
       const response = await axios.post(
-        "${react_app_api_url}=https://api.benjamin.bidou.dev-campus.fr/api/clients/login",
+        `${process.env.REACT_APP_API_URL}/api/clients/login`,
         {
           email,
           mot_de_passe,
         },
       );
+      console.log(response)
 
       const { token, client } = response.data;
 
@@ -42,7 +43,7 @@ function Login(props) {
   };
 
   return (
-    <div style={{ margin: "50px auto", maxWidth: 400 }}>
+  <div style={{ margin: "50px auto", maxWidth: 400 }}>
       <h2>Connexion</h2>
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: 10 }}>
@@ -73,7 +74,9 @@ function Login(props) {
         )}
         <button type="submit">Se connecter</button>
       </form>
-    </div>
+    <button> <Link to={"/register"}>S'inscrire</Link></button>
+    <div>  </div>
+  </div>
   );
 }
 

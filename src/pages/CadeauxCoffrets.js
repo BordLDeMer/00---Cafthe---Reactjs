@@ -1,45 +1,46 @@
-import React, { useState } from 'react';
+/*import React, { useEffect, useState } from 'react';
 
-const CadeauxCoffrets = () => {
-    const [motCle, setMotCle] = useState('');
-    const [produits, setProduits] = useState([])
+const RandomProducts = () => {
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
 
+    useEffect(() => {
+        // Fonction pour récupérer les produits aléatoires de chaque rayon
+        const fetchRandomProducts = async () => {
+            try {
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/api/random-product-by-rayon`);
+                const data = await response.json();
+                setProducts(data);
+                console.log(datay)
+            } catch (error) {
+                console.error('Error fetching random products:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
 
-
-    // Filtrer les produits en fonction du mot-clé dans la description
-    const produitsFiltres = produits.filter((produit) =>
-        produit.description.toLowerCase().includes(motCle.toLowerCase())
-    );
-
-    // Fonction pour gérer la modification du mot-clé
-    const handleMotCleChange = (event) => {
-        setMotCle(event.target.value);
-    };
+        void fetchRandomProducts();
+    }, []);
 
     return (
         <div>
-            <h1>Liste des produits</h1>
-            <label htmlFor="motCle">Rechercher un produit :</label>
-            <input
-                id="motCle"
-                type="text"
-                value={motCle}
-                onChange={handleMotCleChange}
-                placeholder="Rechercher dans la description"
-            />
-            <ul>
-                {produitsFiltres.length === 0 ? (
-                    <li>Aucun produit trouvé</li>
-                ) : (
-                    produitsFiltres.map((produit) => (
-                        <li key={produit.id}>
-                            <strong>{produit.nom}</strong> - {produit.description} - {produit.prix}€
+            <h1>Produits aléatoires par rayon</h1>
+            {loading ? (
+                <p>Chargement...</p>
+            ) : (
+                <ul>
+                    {products.map((product) => (
+                        <li key={product.ID_produit}>
+                            Rayon {product.ID_rayon}: Produit ID {product.ID_produit}
                         </li>
-                    ))
-                )}
-            </ul>
+                    ))}
+                </ul>
+            )}
         </div>
     );
 };
 
-export default CadeauxCoffrets;
+export default RandomProducts;
+
+
+ */

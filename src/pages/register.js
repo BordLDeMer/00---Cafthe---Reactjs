@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 function Register(props) {
     return (
@@ -22,6 +23,8 @@ function Register(props) {
                     <button>S'inscrire</button>
                 </p>
             </form>
+            <button> <Link to={"/login"}>Se connecter</Link> </button>
+
         </div>
     );
 }
