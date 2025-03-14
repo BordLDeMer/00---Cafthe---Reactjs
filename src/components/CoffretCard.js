@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import ProductCard from "./ProductCard";
+import "../styles/CoffretCard.css";
 
 function CoffretCard(ID_produit) {
     const [produit, setProduit] = useState( []);
@@ -19,7 +20,8 @@ function CoffretCard(ID_produit) {
     }, [ID_produit]);
 
     return (
-        <div>
+        <div className="coffretcard">
+            <ProductCard  key={produit.id} produit={produit} />
             <ProductCard  key={produit.id} produit={produit} />
         </div>
     );

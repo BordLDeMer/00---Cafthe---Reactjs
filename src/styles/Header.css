@@ -1,12 +1,28 @@
 .header {
-    background-color: #75AA90;
+    background-color: #33CC99;
     display: flex;
-    padding-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
 
+.header .text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.header p {
+    margin-top: 10px;
 }
 
 .imgtitre {
+    max-width: 300px;
+    height: auto;
     border-radius: 20px;
-    object-position:right;
-    padding-left: 10px;
 }

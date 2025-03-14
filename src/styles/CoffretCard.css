@@ -1,0 +1,13 @@
+.coffretcard {
+    background-color: #33CC99;
+    display: flex;
+    gap: 20px; /* Espace entre les deux cartes */
+    justify-content: center; /* Centre les cartes horizontalement */
+}
+
+@media (max-width: 768px) {
+    .coffretcard {
+        flex-direction: column;
+        align-items: center;
+    }
+}
