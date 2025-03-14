@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "../styles/ProductCard.css";
+import AjouterAuPanier from "./AjouterAuPanier";
 
 function ProductCard({produit}) {
     return (
@@ -16,7 +17,7 @@ function ProductCard({produit}) {
 
                 <div className="prix-btn2">
                     <p>{produit.prix_ttc}€</p>
-                    <Link to={`/`} className="details-btn2"><h2>ADD</h2></Link>
+                    <AjouterAuPanier id={produit.ID_produit} />
                 </div>
             </div>
         </div>
