@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom";
 import axios from "axios";
 
 
-function AjouterAuPanier(id) {
+function AjouterAuPanier({id}) {
     const {isAuthenticated} = useContext(AuthContext);
     const navigate = useNavigate();
     const [commande, setCommande] = useState({});
@@ -25,12 +25,22 @@ function AjouterAuPanier(id) {
     }
 
     // Route qui ajoute l'article dans le panier récupéré si commande.ID_commande Fonction : AjouterArticle()
+    const AjouterArticle = async () => {
+        if (commande.ID_commande){
+            try {
+                await axios.post(`${process.env.REACT_APP_API_URL}/api/ligne/ajouter`,
+                    {ID_commande: commande.ID_commande, ID_produit: id})
+            } catch (error) {
+                console.error("Erreur lors de l'ajout au panier", error)
+            }
+        }
+    }
 
     const HandleAdd = async () => {
         if (!isAuthenticated) {
             navigate("/login");
         } else {
-            // void (await AjouterArticle());
+            void ( AjouterArticle());
         }
     }
 
@@ -40,7 +50,7 @@ function AjouterAuPanier(id) {
 
     return (
         <div>
-            <button onClick={HandleAdd}> {commande.ID_client} </button>
+            <button onClick={HandleAdd}> Ajouter </button>
         </div>
     );
 }

@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AuthProvider } from "./context/AuthContext";
+import axios from "axios";
 import Layout from "./layout/Layout";
 import Home from "./pages/Home";
 import ProductDetails from "./pages/ProductDetails";
-import { AuthProvider } from "./context/AuthContext";
 import Login from "./pages/Login";
-import Panier from "./context/Panier";
+import Panier from "./pages/Panier";
 import EspacePerso from "./pages/EspacePerso";
 import Footer from "./components/Footer";
 import TheInfusions from "./pages/TheInfusions";
@@ -12,6 +13,7 @@ import CadeauxCoffrets from "./pages/CadeauxCoffrets";
 import Cafes from "./pages/Cafes";
 import Appareils from "./pages/Appareils";
 import Register from "./pages/register";
+axios.defaults.headers.common["Authorization"] = `Bearer ${localStorage.getItem("token")}`
 
 function App() {
   return (
