@@ -31,6 +31,31 @@ function Footer() {
         )
     }
 
+    // Paramètres de configuration du carrousel
+    const settings = {
+        dots: true, // Affiche les points de navigation en bas du carrousel
+        infinite: true, // Permet au carrousel de boucler
+        speed: 500, // Vitesse de transition
+        slidesToShow: 2, // Nombre de produits affichés par slide
+        slidesToScroll: 1, // Nombre de produits défilés par scroll
+        responsive: [
+            {
+                breakpoint: 640, // Si la largeur de l'écran est inférieure à 640px
+                settings: {
+                    slidesToShow: 2, // Afficher 2 produits
+                    slidesToScroll: 1, // Faire défiler 1 produit à la fois
+                },
+            },
+            {
+                breakpoint: 768, // Si la largeur de l'écran est inférieure à 768px
+                settings: {
+                    slidesToShow: 3, // Afficher 3 produits
+                    slidesToScroll: 1, // Faire défiler 1 produit à la fois
+                },
+            },
+        ],
+    };
+
     /*return (
 
       <div className="Footer" >
@@ -47,7 +72,7 @@ function Footer() {
   );
 }*/
 
-    const Footer = ({produits}) => {
+   /* const Footer = ({produits}) => {
         // Paramètres de configuration du carrousel
         const settings = {
             dots: true, // Affiche les points de navigation en bas du carrousel
@@ -71,7 +96,7 @@ function Footer() {
                     },
                 },
             ],
-        };
+        };*/
 
         return (
             <div className="Footer">
@@ -90,6 +115,6 @@ function Footer() {
                 </button>
             </div>
         );
-    };
+   // };
 };
     export default Footer;

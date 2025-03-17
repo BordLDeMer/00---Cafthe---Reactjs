@@ -2,12 +2,15 @@ import React, {useContext, useEffect, useState} from 'react';
 import {AuthContext} from "../context/AuthContext";
 import {useNavigate} from "react-router-dom";
 import axios from "axios";
+import LignePanier from "../components/LignePanier";
+import "../styles/Panier.css";
 
 function Panier() {
     const {isAuthenticated} = useContext(AuthContext);
     const navigate = useNavigate();
     const [commande, setCommande] = useState({});
     const [lignes, setLignes] = useState({});
+    const [prix, setPrix] = useState(null);
     const user = JSON.parse(localStorage.getItem("user"));
 
     const RecupCommande = async () => {
@@ -35,33 +38,42 @@ function Panier() {
         }
     }
 
+    const CalculPrixTot = async () => {
+        let tempPrix = 0;
+
+        for (let i = 0; i < lignes.length; i++) {
+            let temp = await axios.get(`${process.env.REACT_APP_API_URL}/api/produit/${lignes[i].ID_produit}`)
+            tempPrix += temp.data.prix_ttc * lignes[i].qte_pdt_ligne_panier;
+        }
+        setPrix(tempPrix);
+    }
+
     if (!commande.ID_commande){
         void RecupCommande();
     }
 
     if (!lignes[0]){
         void RecupLignesCommande();
-        console.log(lignes)
     }
-    console.log(commande);
-    console.log(lignes);
 
+    if (lignes[0] !== undefined && prix === null){
+        void CalculPrixTot();
+    }
 
     return (
         <div>
             {/*<Produits produits={produitsData} ajouterAuPanier={ajouterAuPanier} />*/}
             <h2>Panier</h2>
-            <ul>
-                {commande.ID_commande ? (
-                    lignes.map((produit, index) => (
-                        <li key={index}>
-                            {produit[0].nom} - {produit[0].prix} € x{produit[0].quantity}
-                        </li>
-                    ))
-                ) :
-                ""}
-            </ul>
-            <h3>Total:  €</h3>
+            <div>
+                <div className="ligneDiv" style={{marginBottom: "5px"}}>
+                    <div className="Colonne"><h3>Nom</h3></div>
+                    <div className="Colonne"><h3>Quantité</h3></div>
+                    <div className="Colonne"><h3>Prix total</h3></div>
+                </div>
+                {lignes[0] !== undefined ?
+                    lignes.map(produit => <LignePanier id={produit.ID_produit} quantite={produit.qte_pdt_ligne_panier} />) :""}
+            </div>
+            <h3>Total: {prix !== null ? prix : "0"} €</h3>
         </div>
     );
 }

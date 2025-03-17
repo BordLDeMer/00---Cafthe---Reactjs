@@ -1,0 +1,11 @@
+.ligneDiv {
+    display: flex;
+    background-color: lavender;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.Colonne {
+    width: 20%;
+}
