@@ -5,6 +5,12 @@
     justify-content: center; /* Centre les cartes horizontalement */
 }
 
+.coffret {
+    background-color: olivedrab;
+
+    padding: 10px;
+}
+
 @media (max-width: 768px) {
     .coffretcard {
         flex-direction: column;

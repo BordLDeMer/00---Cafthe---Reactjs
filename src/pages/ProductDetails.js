@@ -29,6 +29,7 @@ function ProductDetails() {
     console.log(produit)
 
   return (
+  <div className="centrage">
     <div className="product-details">
       {/* image */}
       <div key={produit.ID_produit}>
@@ -42,6 +43,7 @@ function ProductDetails() {
            </p>*/}
       </div>
     </div>
+  </div>
   );
 }
 

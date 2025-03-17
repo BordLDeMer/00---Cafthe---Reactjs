@@ -21,8 +21,8 @@ function CoffretCard(ID_produit) {
 
     return (
         <div className="coffretcard">
-            <ProductCard  key={produit.id} produit={produit} />
-            <ProductCard  key={produit.id} produit={produit} />
+            <div className="coffret"><ProductCard  key={produit.id} produit={produit} /></div>
+            <div className="coffret"><ProductCard  key={produit.id} produit={produit} /></div>
         </div>
     );
 }
