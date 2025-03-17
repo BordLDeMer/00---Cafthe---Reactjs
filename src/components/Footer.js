@@ -100,7 +100,7 @@ function Footer() {
 
         return (
             <div className="Footer">
-                <div className="promo">
+                <div>
                     <Slider {...settings}>
                         {produits.map((produit) => (
                             <div key={produit.id}>
