@@ -1,10 +1,10 @@
 .Footer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Aligne les éléments au début (gauche) */
+    justify-content: space-between; /* Aligne les éléments au début (gauche) */
     gap: 10px; /* Espace entre les éléments */
     background-color: #33CC99;
-    width: 100%;
+    min-height: 400px;
     box-sizing: border-box;
     overflow: hidden;
     padding: 10px;

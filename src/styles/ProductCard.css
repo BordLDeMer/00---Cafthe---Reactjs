@@ -16,11 +16,11 @@ h1 {
     text-align: center
 }
 body {
-    /*background-color: rgba(117, 170, 144, 1);
-    /*background-image: url("/public/moc-chau-tea-hills-2094184_1280.jpg"); */
+    background-color: rgba(255, 228, 196, 0.5);
+    /*background-image: url("/public/moc-chau-tea-hills-2094184_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    box-sizing: border-box;
+    box-sizing: border-box; */
 }
 * {
     box-sizing: border-box;
@@ -47,7 +47,7 @@ p {
     max-width: 700px;
     /*height: 300px;*/
     gap: 20px;
-    aspect-ratio : 3/1;
+    /*aspect-ratio : 3/1;*/
     border: 2px solid darkolivegreen;
     border-radius: 10px;
     background-color: #89937C;

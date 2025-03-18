@@ -9,3 +9,7 @@
 .Colonne {
     width: 20%;
 }
+
+.slick-track {
+    overflow: hidden;
+}
