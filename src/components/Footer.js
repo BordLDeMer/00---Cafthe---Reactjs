@@ -35,8 +35,8 @@ function Footer() {
     const settings = {
         dots: true, // Affiche les points de navigation en bas du carrousel
         infinite: true, // Permet au carrousel de boucler
-        speed: 500, // Vitesse de transition
-        slidesToShow: 2, // Nombre de produits affichés par slide
+        speed: 50000, // Vitesse de transition
+        slidesToShow: 3, // Nombre de produits affichés par slide
         slidesToScroll: 1, // Nombre de produits défilés par scroll
         responsive: [
             {
