@@ -13,7 +13,9 @@ import CadeauxCoffrets from "./pages/CadeauxCoffrets";
 import Cafes from "./pages/Cafes";
 import Appareils from "./pages/Appareils";
 import Register from "./pages/register";
-axios.defaults.headers.common["Authorization"] = `Bearer ${localStorage.getItem("token")}`
+import Commande from "./components/Commande";
+axios.defaults.headers.common["Authorization"] =
+  `Bearer ${localStorage.getItem("token")}`;
 
 function App() {
   return (
@@ -24,16 +26,18 @@ function App() {
             <Route index element={<Home />} />
             <Route path="produit/:id" element={<ProductDetails />} />
             <Route path={"login"} element={<Login />} />
-            <Route path={"panier"} element={<Panier />}/>
-            <Route path={"EspacePerso"} element={<EspacePerso />}/>
-            <Route path={"Footer"} element={<Footer />}/>
-            <Route path={"Cafés"} element={<Cafes />}/>
-            <Route path={"nos-thes-infusions"} element={<TheInfusions />}/>
-            <Route path={"nos-machines"} element={<Appareils />}/>
-            <Route path={"nos-cadeaux-coffrets"} element={<CadeauxCoffrets />}/>
-            <Route path={"register"} element={<Register />}/>
-            <Route path={"commande"} element={<Commande />}
-
+            <Route path={"panier"} element={<Panier />} />
+            <Route path={"EspacePerso"} element={<EspacePerso />} />
+            <Route path={"Footer"} element={<Footer />} />
+            <Route path={"Cafés"} element={<Cafes />} />
+            <Route path={"nos-thes-infusions"} element={<TheInfusions />} />
+            <Route path={"nos-machines"} element={<Appareils />} />
+            <Route
+              path={"nos-cadeaux-coffrets"}
+              element={<CadeauxCoffrets />}
+            />
+            <Route path={"register"} element={<Register />} />
+            <Route path={"Commande"} element={<Commande />} />
           </Route>
         </Routes>
       </Router>
