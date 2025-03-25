@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import LignePanier from "../components/LignePanier";
 import "../styles/Panier.css";
@@ -105,6 +105,9 @@ function Panier() {
           : ""}
       </div>
       <h3>Total: {prix !== null ? prix : "0"} €</h3>
+      <button>
+        <Link to="/Commande">Commande précédente</Link>
+      </button>
     </div>
   );
 }

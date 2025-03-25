@@ -21,7 +21,7 @@ function Navbar() {
       <Link to="/nos-machines">Nos Machines</Link>
       <Link to="/nos-cadeaux-coffrets">Nos Cadeaux & Coffrets Découverte</Link>
       <Link to="/panier">Panier</Link>
-      <Link to="/Commande">Commande précédente</Link>
+
       <div>
         {isAuthenticated ? (
           <>
