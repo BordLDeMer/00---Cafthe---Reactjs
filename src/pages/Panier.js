@@ -108,7 +108,11 @@ function Panier() {
       <button>
         <Link to="/Commande">Commande précédente</Link>
       </button>
+      <button style={{ marginLeft: "1110px" }}>
+        <Link to="/Livraison">Options de livraison</Link>
+      </button>
     </div>
   );
 }
+
 export default Panier;
