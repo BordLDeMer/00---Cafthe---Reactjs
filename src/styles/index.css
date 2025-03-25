@@ -15,3 +15,36 @@
 header {
     background-color: #75AA90;
 }
+
+.box-commande {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 15px auto;
+    transition: transform 0.3s ease;
+}
+
+.box-commande:hover {
+    transform: translateY(-5px);
+}
+
+.box-commande p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-commande p::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #4a90e2;
+    border-radius: 50%;
+    margin-right: 10px;
+}

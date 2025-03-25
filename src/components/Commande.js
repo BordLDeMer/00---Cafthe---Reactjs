@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ProductCard from "./ProductCard";
 import { Link } from "react-router-dom";
+import "../styles/index.css";
 
 function Command() {
   const user = JSON.parse(localStorage.getItem("user"));
