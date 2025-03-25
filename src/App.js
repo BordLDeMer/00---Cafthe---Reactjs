@@ -32,6 +32,7 @@ function App() {
             <Route path={"nos-machines"} element={<Appareils />}/>
             <Route path={"nos-cadeaux-coffrets"} element={<CadeauxCoffrets />}/>
             <Route path={"register"} element={<Register />}/>
+            <Route path={"commande"} element={<Commande />}
 
           </Route>
         </Routes>
