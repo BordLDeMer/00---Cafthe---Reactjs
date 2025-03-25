@@ -14,6 +14,7 @@ import Cafes from "./pages/Cafes";
 import Appareils from "./pages/Appareils";
 import Register from "./pages/register";
 import Commande from "./components/Commande";
+import Livraison from "./components/Livraison";
 axios.defaults.headers.common["Authorization"] =
   `Bearer ${localStorage.getItem("token")}`;
 
@@ -38,6 +39,7 @@ function App() {
             />
             <Route path={"register"} element={<Register />} />
             <Route path={"Commande"} element={<Commande />} />
+            <Route path={"Livraison"} element={<Livraison />} />
           </Route>
         </Routes>
       </Router>

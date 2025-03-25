@@ -1,0 +1,79 @@
+.delivery-options {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.delivery-options h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.delivery-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.delivery-option {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.delivery-option:hover {
+    background-color: #f5f5f5;
+}
+
+.delivery-option.selected {
+    border-color: #2196f3;
+    background-color: #e3f2fd;
+}
+
+.delivery-option input {
+    margin-right: 15px;
+}
+
+.delivery-info {
+    flex-grow: 1;
+}
+
+.delivery-info h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.delivery-info p {
+    margin: 0 0 10px 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.price.express {
+    color: #4caf50;
+}
+
+.delivery-confirmation {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.selected-option {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #2196f3;
+}
