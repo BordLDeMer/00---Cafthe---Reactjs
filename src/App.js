@@ -18,6 +18,10 @@ import Livraison from "./components/Livraison";
 axios.defaults.headers.common["Authorization"] =
   `Bearer ${localStorage.getItem("token")}`;
 
+function CommandePassée() {
+  return null;
+}
+
 function App() {
   return (
     <AuthProvider>
@@ -40,6 +44,7 @@ function App() {
             <Route path={"register"} element={<Register />} />
             <Route path={"Commande"} element={<Commande />} />
             <Route path={"Livraison"} element={<Livraison />} />
+            <Route path={"CommandePassée"} element={<CommandePassée />} />
           </Route>
         </Routes>
       </Router>

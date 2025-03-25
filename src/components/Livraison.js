@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/DeliveryOptions.css";
+import { Link } from "react-router-dom";
 
 const DeliveryOptions = () => {
   const [selectedDelivery, setSelectedDelivery] = useState(null);
@@ -60,6 +61,9 @@ const DeliveryOptions = () => {
           </p>
         </div>
       )}
+      <button>
+        <Link to="/CommandePassée"> Passer Commande</Link>
+      </button>
     </div>
   );
 };
