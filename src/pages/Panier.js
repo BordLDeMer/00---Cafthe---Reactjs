@@ -9,15 +9,13 @@ function Panier() {
   const { isAuthenticated } = useContext(AuthContext);
   const navigate = useNavigate();
   const [commande, setCommande] = useState(undefined);
-  const [lignes, setLignes] = useState({});
+  const [lignes, setLignes] = useState(undefined);
   const [prix, setPrix] = useState(null);
   const user = JSON.parse(localStorage.getItem("user"));
 
   const Reload = () => {
     void RecupCommande();
   };
-
-  console.log(lignes[0]);
 
   const RecupCommande = async () => {
     if (user) {
@@ -26,7 +24,6 @@ function Panier() {
           `${process.env.REACT_APP_API_URL}/api/commande/client/ouvert/${user.id}`,
         );
         setCommande(response.data);
-        void RecupLignesCommande();
       } catch (error) {
         console.error(
           "Erreur de chargement de la dernière commande du client",
@@ -38,7 +35,6 @@ function Panier() {
 
   const RecupLignesCommande = async () => {
     try {
-      console.log(commande);
       const response = await axios.get(
         `${process.env.REACT_APP_API_URL}/api/ligne/commande/${commande.ID_commande}`,
       );
@@ -67,13 +63,17 @@ function Panier() {
     void RecupCommande();
   }
 
-  if (!lignes[0]) {
-    void RecupLignesCommande();
+  if (lignes === undefined && commande !== undefined) {
+    console.log(commande.NB_ligne_cmd);
+    if (!commande.NB_ligne_cmd == 0) {
+      void RecupLignesCommande();
+    }
   }
 
-  if (lignes[0] !== undefined && prix === null) {
+  if (lignes !== undefined && prix === null) {
     void CalculPrixTot();
   }
+  console.log(lignes);
 
   return (
     <div>
@@ -96,7 +96,7 @@ function Panier() {
         </div>
       </div>
       <div>
-        {lignes[0] !== undefined
+        {lignes !== undefined
           ? lignes.map((produit) => (
               <LignePanier
                 id={produit.ID_produit}
