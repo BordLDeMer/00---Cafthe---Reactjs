@@ -8,7 +8,7 @@ import "../styles/Panier.css";
 function Panier() {
   const { isAuthenticated } = useContext(AuthContext);
   const navigate = useNavigate();
-  const [commande, setCommande] = useState({});
+  const [commande, setCommande] = useState(undefined);
   const [lignes, setLignes] = useState({});
   const [prix, setPrix] = useState(null);
   const user = JSON.parse(localStorage.getItem("user"));
@@ -16,6 +16,8 @@ function Panier() {
   const Reload = () => {
     void RecupCommande();
   };
+
+  console.log(lignes[0]);
 
   const RecupCommande = async () => {
     if (user) {
@@ -36,6 +38,7 @@ function Panier() {
 
   const RecupLignesCommande = async () => {
     try {
+      console.log(commande);
       const response = await axios.get(
         `${process.env.REACT_APP_API_URL}/api/ligne/commande/${commande.ID_commande}`,
       );
@@ -60,7 +63,7 @@ function Panier() {
     setPrix(tempPrix);
   };
 
-  if (!commande.ID_commande) {
+  if (commande === undefined) {
     void RecupCommande();
   }
 
