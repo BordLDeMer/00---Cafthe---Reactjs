@@ -20,33 +20,36 @@ function MentionsLegales() {
         >
           1. Identité de l'entreprise
         </h2>
-        <p>Raison sociale : [Nom de votre entreprise]</p>
-        <p>Forme juridique : [SARL, SAS, SA, Entreprise individuelle, etc.]</p>
-        <p>Capital social : [Montant du capital social]</p>
-        <p>Numéro SIRET : [Votre numéro SIRET]</p>
-        <p>Numéro RCS : [Votre numéro RCS et ville d'immatriculation]</p>
-        <p>Numéro de TVA intracommunautaire : [Votre numéro de TVA]</p>
-        <p>Adresse du siège social : [Adresse complète]</p>
-        <p>Téléphone : [Numéro de téléphone]</p>
-        <p>Email : [Adresse email de contact]</p>
+        <p>Raison sociale : [Bidou Corp]</p>
+        <p>Forme juridique : [SARL]</p>
+        <p>Capital social : [7€]</p>
+        <p>Numéro SIRET : [184024105701877]</p>
+        <p>Numéro RCS : [BJ002XQ à Vendôme]</p>
+        <p>Numéro de TVA intracommunautaire : [00000000]</p>
+        <p>
+          Adresse du siège social : [30, rue du haut de ris 41800 Les Roches
+          l'Evêque]
+        </p>
+        <p>Téléphone : [0684377922]</p>
+        <p>Email : [benjamin.bidou@campus-centre.fr]</p>
 
         <h2
           style={{ fontSize: "20px", marginTop: "20px", marginBottom: "10px" }}
         >
           2. Direction de la publication
         </h2>
-        <p>Directeur de la publication : [Nom et prénom du directeur]</p>
-        <p>Fonction : [Fonction du directeur dans l'entreprise]</p>
-        <p>Email : [Email professionnel du directeur]</p>
+        <p>Directeur de la publication : [BIDOU Benjamin]</p>
+        <p>Fonction : [Omni-impotent]</p>
+        <p>Email : [benjamin.bidou@campus-centre.fr]</p>
 
         <h2
           style={{ fontSize: "20px", marginTop: "20px", marginBottom: "10px" }}
         >
           3. Hébergement du site
         </h2>
-        <p>Société d'hébergement : [Nom de l'hébergeur]</p>
-        <p>Adresse : [Adresse complète de l'hébergeur]</p>
-        <p>Téléphone : [Numéro de téléphone de l'hébergeur]</p>
+        <p>Société d'hébergement : [Plesk]</p>
+        <p>Adresse : [Bonne question]</p>
+        <p>Téléphone : [0200000000]</p>
 
         <h2
           style={{ fontSize: "20px", marginTop: "20px", marginBottom: "10px" }}
@@ -56,10 +59,10 @@ function MentionsLegales() {
         <p>
           Tous les contenus présents sur ce site (textes, images, logos, vidéos,
           etc.) sont protégés par le droit d'auteur et sont la propriété
-          exclusive de [Nom de votre entreprise] ou de ses partenaires. Toute
-          reproduction, représentation, modification, publication ou adaptation,
-          totale ou partielle, des éléments du site est strictement interdite
-          sans autorisation préalable.
+          exclusive de [Bidou Corp.] ou de ses partenaires. Toute reproduction,
+          représentation, modification, publication ou adaptation, totale ou
+          partielle, des éléments du site est strictement interdite sans
+          autorisation préalable.
         </p>
 
         <h2
@@ -72,8 +75,8 @@ function MentionsLegales() {
           (RGPD), vous disposez d'un droit d'accès, de rectification,
           d'effacement et de portabilité de vos données personnelles, ainsi que
           d'un droit d'opposition et de limitation du traitement. Pour exercer
-          ces droits, veuillez nous contacter à l'adresse suivante : [Email
-          dédié RGPD].
+          ces droits, veuillez nous contacter à l'adresse suivante :
+          [benjamin.bidou@campus-centre.fr].
         </p>
 
         <h3
@@ -85,14 +88,8 @@ function MentionsLegales() {
         <p>
           [Liste des données collectées : ex. nom, prénom, email, adresse, etc.]
         </p>
-        <p>
-          Finalité de la collecte : [Préciser pourquoi vous collectez ces
-          données]
-        </p>
-        <p>
-          Durée de conservation : [Préciser la durée de conservation des
-          données]
-        </p>
+        <p>Finalité de la collecte : [Profil & fidélisation clients]</p>
+        <p>Durée de conservation : [Ad Vitam]</p>
 
         <h3
           style={{ fontSize: "18px", marginTop: "15px", marginBottom: "10px" }}
@@ -112,9 +109,8 @@ function MentionsLegales() {
           6. Conditions Générales de Vente (CGV)
         </h2>
         <p>
-          Les CGV complètes sont disponibles [lien vers les CGV]. Elles
-          définissent les modalités de vente entre [Nom de l'entreprise] et ses
-          clients.
+          Les CGV complètes sont disponibles sur cette page. Elles définissent
+          les modalités de vente entre [Cafthé] et ses clients.
         </p>
 
         <h2
@@ -124,8 +120,7 @@ function MentionsLegales() {
         </h2>
         <p>
           Le présent site et ses mentions légales sont soumis au droit français.
-          En cas de litige, les tribunaux de [ville du siège social] seront
-          seuls compétents.
+          En cas de litige, les tribunaux de [Vendôme] seront seuls compétents.
         </p>
 
         <h2
@@ -135,8 +130,8 @@ function MentionsLegales() {
         </h2>
         <p>
           Conformément aux dispositions du Code de la consommation concernant le
-          règlement amiable des litiges, [Nom de l'entreprise] adhère au service
-          du médiateur suivant : [Nom et coordonnées du médiateur].
+          règlement amiable des litiges, [BIDOU Corp.] adhère au service du
+          médiateur suivant : [B.BIDOU benjamin.bidou@campus-centre.fr].
         </p>
 
         <h2
@@ -144,10 +139,7 @@ function MentionsLegales() {
         >
           9. Dernière mise à jour
         </h2>
-        <p>
-          Ces mentions légales ont été mises à jour le [date de la dernière mise
-          à jour].
-        </p>
+        <p>Ces mentions légales ont été mises à jour le [03/04/2025].</p>
       </div>
     </div>
   );
